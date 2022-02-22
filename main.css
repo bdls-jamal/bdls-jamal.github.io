@@ -108,7 +108,32 @@
   .sticky:hover {
     opacity:1;
   }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 20px;
+    color:whitesmoke;
+  }
 
+  a, a:visited{
+    color: whitesmoke;
+}
+
+p span{
+  background-color: black;
+  font-weight: 200;
+  font-size: large;
+}
+span{
+  background-color: black;
+}
 
 @media only screen and (min-width: 900px) {
     #siesta {

@@ -5,8 +5,26 @@
         <title>Playground Website</title>
         <link href="main.css" rel="stylesheet">
     </head>
-    <body>
-        <div class="sticky">
+    <body class="main">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="youtube vids.html">Cool Youtube Videos</a>
+                    </li>
+                    <li>
+                        <a href="baenyebe.html">baenyebe Recent Uploads</a>
+                    </li>
+                    <li>
+                        <a href="misc.html">Misc Nonsense</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- <div class="sticky">
             <a href="#top_page" class="hyperlink">
                 <span>Scroll back to top.</span></a>
             <div id='hyperlinks' style="text-align: center;">
@@ -25,87 +43,19 @@
                     <a href="#neon" style="color: white;"><span>Go to Entertain Me</span></a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <br id="top_page" />
         <h1 id="header" style='color:antiquewhite'>Hey this is my first website!</h1><b style="color: antiquewhite;">Does this work?</b>
         <br /><p style='color:rgb(255, 255, 255)'>I think it does work.</p> 
         <br />
 
-        <br />
-        <div class='another-wrapper' style="text-align: center;">
-            <div class="DM">
-                <iframe width="100%" height="960" allow="fullscreen" src="https://www.youtube.com/embed/NNFo92L2g_c"></iframe>
-            </div>
-        </div>
-        <div style='text-align: center;'>
-            <video id="neon" width="100%" height="315" controls>
-                <source src="files for site/Y2Mate.is - Ylona Garcia - Entertain Me (Official Music Video).mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <img src="files for site/maxresdefault.jpg" alt="Hula Hoop" class="images" style="text-align:center">
-        <br />
-        <div style="text-align: center;">
-            <audio controls id='myaudio' loop>
-                <source volume='50%' style='color:crimson' src='files for site/LOONA 今月の少女 Hula Hoop.mp3' type='audio/mpeg'>
-            </audio>
-        </div>
-        <div id="siesta" style='text-align: center;'>  
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0Lv8nIY6aeJfERMDVTBKHb?utm_source=generator"
-            width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-        </div>
-        <br />
-        <div class="wrapper" style="text-align: center;">
-            <div class="one">
-                <iframe width="100%" height="315" allow='fullscreen' src='https://www.youtube.com/embed/RjqVh2rZsog'></iframe>
-            </div>
-            <div class="one">
-                <iframe width="100%" height="315"  allow='fullscreen' src="https://www.youtube.com/embed/ZHm8c6vtTF8"></iframe>
-                <!--mpTb7loGos8, -->
-            </div>
-        </div>
-        <div class="wrapper2" style="text-align: center; margin-bottom: 200px;">
-            <div class='two'>
-                <iframe width="100%" height="315"  allow='fullscreen' src="https://www.youtube.com/embed/5oY1oGreu3Y"></iframe>
-                <!--bKbNznyuLG0-->
-            </div>
-            <div class="two">
-                <iframe width="100%" height="315" allow='fullscreen' src='https://www.youtube.com/embed/H69tJmsgd9I'></iframe>
-                <!--VCExAIL00EM-->
-            </div>
-        </div> 
-        </div>
-        <div id="auto_youtube" style="text-align: center;">
-            <div class="latest" style="text-align: center;">
-                <p class="gg" style='color:rgb(255, 255, 255)'>
-                    <span> Latest baenyebe Upload!</span>
-                </p>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-                <iframe id="youtube_video" width="100%" height="315" allow='fullscreen'></iframe>
-            </div>
-            <div class="second_latest" style="text-align: center;">
-                <p class="weirdchamp" style='color:rgb(255, 255, 255)'>
-                    <span>Previous baenyebe Upload!</span>
-                </p>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-                <iframe id="youtube_video2" width="100%" height="315" allow='fullscreen'></iframe>
-            </div>
-        </div>
-        
         <style>
             /* body {
                 background-image: url('files for site/mobile-background.jpg');
                 background-size: contain;
                 background-position: center;
             } */
-            p span{
-                background-color: black;
-                font-weight: 200;
-                font-size: large;
-            }
-            span{
-                background-color: black;
-            }
+            
             div.sticky {
                 position: -webkit-sticky;
                 position: sticky;
@@ -116,20 +66,6 @@
 </html>
 
 <!-- JavaScript -->
-<script>
-    var audio = document.getElementById("myaudio");
-    audio.volume = 0.2;
-  </script>
-
-<script>
-    var siesta = document.getElementById("siesta");
-    siesta.volume = 0.2;
-</script>
-
-<script>
-    var neon = document.getElementById("neon");
-    neon.volume = 0.2;
-</script>
 <!-- <script type="text/javascript">
     function addText() {
        if (!document.getElementById) return;
@@ -147,17 +83,3 @@
         document.getElementById("paragraph1").appendChild(node1); 
     }
 </script> -->
-<script>
-    var channelID = "UCovrfrjidfCBhPAzA_uAmlg";
-    var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
-    $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL)+channelID, function(data) {
-    var link = data.items[0].link;
-    var id = link.substr(link.indexOf("=")+1);
-    $("#youtube_video").attr("src","https://youtube.com/embed/"+id + "?controls=1&showinfo=0&rel=0");
-});
-    $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL)+channelID, function(data) {
-    var link2 = data.items[1].link;
-    var id2 = link2.substr(link2.indexOf("=")+1);
-    $("#youtube_video2").attr("src","https://youtube.com/embed/"+id2 + "?controls=1&showinfo=0&rel=0");
-});
-</script>

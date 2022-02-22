@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Playground Website</title>
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body class="baenyebe">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="youtube vids.html">Cool Youtube Videos</a>
+                    </li>
+                    <li>
+                        <a href="baenyebe.html">baenyebe Recent Uploads</a>
+                    </li>
+                    <li>
+                        <a href="misc.html">Misc Nonsense</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="auto_youtube" style="text-align: center;">
+            <div class="latest" style="text-align: center;">
+                <p class="gg" style='color:rgb(255, 255, 255)'>
+                    <span> Latest baenyebe Upload!</span>
+                </p>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <iframe id="youtube_video" width="100%" height="315" allow='fullscreen'></iframe>
+            </div>
+            <div class="second_latest" style="text-align: center;">
+                <p class="weirdchamp" style='color:rgb(255, 255, 255)'>
+                    <span>Previous baenyebe Upload!</span>
+                </p>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <iframe id="youtube_video2" width="100%" height="315" allow='fullscreen'></iframe>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!-- JavaScript -->
+<script>
+    var channelID = "UCovrfrjidfCBhPAzA_uAmlg";
+    var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
+    $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL)+channelID, function(data) {
+    var link = data.items[0].link;
+    var id = link.substr(link.indexOf("=")+1);
+    $("#youtube_video").attr("src","https://youtube.com/embed/"+id + "?controls=1&showinfo=0&rel=0");
+});
+    $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL)+channelID, function(data) {
+    var link2 = data.items[1].link;
+    var id2 = link2.substr(link2.indexOf("=")+1);
+    $("#youtube_video2").attr("src","https://youtube.com/embed/"+id2 + "?controls=1&showinfo=0&rel=0");
+});
+</script>
