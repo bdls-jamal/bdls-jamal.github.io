@@ -118,6 +118,12 @@
     }
 }
 
+    #neon {
+        margin-left: auto;
+        margin-right: auto;
+        width: 420px;
+    }
+
 @media only screen and (max-width: 900px) {
     #DM {
         width: 100%;
