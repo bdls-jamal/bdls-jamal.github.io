@@ -231,7 +231,23 @@ span{
         width: 100%;
       }
     
-    body {
+    body.main{
+      background-image: url('files for site/astronaut.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+  }
+    body.baenyebe{
+      background-image: url('files for site/hk at night.jpg');
+      background-size: cover;
+      background-position: center;
+  }
+    body.youtube_vids{
+      background-image: url('files for site/hk at night.jpg');
+      background-size: cover;
+      background-position: center;
+  }
+    body.misc{
       background-image: url('files for site/hk at night.jpg');
       background-size: cover;
       background-position: center;
