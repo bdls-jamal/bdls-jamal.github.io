@@ -15,6 +15,7 @@
     height: 336px;
     display: inline-block;
 }
+
 /* #three {
     width: 560px;
     height: 315px;
@@ -39,15 +40,15 @@
     width: 100%;
 }
 
-#latest{
-    width: 560px;
-    height: 315px;
+.latest{
+    width: 336px;
+    height: 189px;
     display: inline-block;
 }
 
-#second_latest{
-    width: 560px;
-    height: 315px;
+.second_latest{
+    width: 336px;
+    height: 189px;
     display: inline-block;
 }
 
@@ -145,6 +146,20 @@
         top:0;
         left: 0;
         width: 100%;
+      }
+
+      .latest{
+        position: relative;
+        padding-bottom: 0%; 
+        width: 560px;
+        height: 315px;
+      }
+      
+      .second_latest{
+        position: relative;
+        padding-bottom: 0%; 
+        width: 560px;
+        height: 315px;
       }
 
     #link1{
