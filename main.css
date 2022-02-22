@@ -10,6 +10,7 @@
     display: inline-block;
 }
 
+
 /* #three {
     width: 560px;
     height: 315px;
@@ -21,7 +22,6 @@
     height: 315px;
     display: inline-block;
 } */
-
 
 .images {
     display: block;
@@ -141,12 +141,6 @@
         width: 100%;
       }
 
-      #neon {
-        margin-left: auto;
-        margin-right: auto;
-        width: 420px;
-    }
-
     #link1{
         display: inline-block;
     }
@@ -170,6 +164,11 @@
     
     #link4{
         display: inline-block;
+    }
+
+    #neon {
+        width: 400px;
+        height: 300px;
     }
 }
 
