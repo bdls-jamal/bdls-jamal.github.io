@@ -30,6 +30,10 @@
     width: 20%;
 }
 
+#siesta {
+    margin: auto;
+    width: 100%;
+}
 
 #latest{
     width: 560px;
