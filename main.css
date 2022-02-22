@@ -1,16 +1,20 @@
 .one {
-    width: 560px;
-    height: 315px;
+    width: 336px;
+    height: 189px;
     display: inline-block;
 }
 
 .two {
-    width: 560px;
-    height: 315px;
+    width: 336px;
+    height: 189px;
     display: inline-block;
 }
 
-
+.DM {
+    width: 189px;
+    height: 336px;
+    display: inline-block;
+}
 /* #three {
     width: 560px;
     height: 315px;
@@ -27,7 +31,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
 }
 
 #siesta {
@@ -119,8 +123,9 @@
 
     .one{
         position: relative;
-        padding-bottom: 16.5%; 
-        height: 0;
+        padding-bottom: 0%; 
+        width: 560px;
+        height: 315px;
       }
       .one iframe{
         position: absolute;
@@ -131,8 +136,9 @@
       
       .two{
         position: relative;
-        padding-bottom: 10%; 
-        height: 0;
+        padding-bottom: 0%; 
+        width: 560px;
+        height: 315px;
       }
       .two iframe{
         position: absolute;
@@ -169,15 +175,29 @@
     #neon {
         width: 400px;
         height: 300px;
+        padding-bottom: 2.5%;
     }
+
+    .DM{
+        position: relative;
+        padding-bottom: 2.5%; 
+        width: 540px;
+        height: 960px;
+      }
+      .DM iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+      }
 }
 
-@media only screen and (max-width: 900px) {
-    #DM {
+/* @media only screen and (max-width: 900px) {
+    .DM {
         width: 100%;
         margin: auto;
     }
-}
+} */
   /* @media only screen and (min-width: 1081px) {
     .images {
         display: block;
