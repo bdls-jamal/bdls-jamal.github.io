@@ -1,0 +1,105 @@
+#one {
+    width: 560px;
+    height: 315px;
+    display: inline-block;
+}
+
+#two {
+    width: 560px;
+    height: 315px;
+    display: inline-block;
+}
+
+#three {
+    width: 560px;
+    height: 315px;
+    display: inline-block;
+}
+
+#four {
+    width: 560px;
+    height: 315px;
+    display: inline-block;
+}
+
+
+.images {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+#latest{
+    width: 560px;
+    height: 315px;
+    display: inline-block;
+}
+
+#second_latest{
+    width: 560px;
+    height: 315px;
+    display: inline-block;
+}
+
+#link1{
+    display: inline-block;
+}
+
+#link2{
+    display: inline-block;
+}
+
+.hyperlink{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    color: white;
+}
+
+#link3{
+    display: inline-block;
+}
+
+#link4{
+    display: inline-block;
+}
+
+.sticky {
+    cursor:default;
+    color:#000;
+    text-decoration:none;
+    position: relative;
+    display: block;
+  }
+  
+  .sticky{
+    opacity:0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .sticky{
+      transition: opacity .5s;
+      -o-transition: opacity .5s;
+      -ms-transition: opacity .5s;
+      -moz-transition: opacity .5s;
+      -webkit-transition: opacity .5s;
+  }
+
+  .sticky:hover {
+    opacity:0;
+  }
+  .sticky:hover {
+    opacity:1;
+  }
+
+/* .auto-update { 
+    background:#ccc; padding:10px;}
+p { text-align:center; }
+p span { display:inline-block; background:rgb(0, 0, 0); padding:5px; text-align: center;} */
