@@ -1,3 +1,51 @@
+header nav{
+  display: none;
+}
+
+#mobile-nav{
+  margin: auto 0;
+  display: block;
+  cursor: pointer;
+}
+
+#mobile-nav div{
+  width: 35px;
+  height: 3px;
+  background-color: aliceblue;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .item1{
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .item2{
+  opacity: 0;
+}
+
+.open .item3{
+  -webkit-transform: rotate(45deg) translate(-6px, 8px);
+  transform: rotate(45deg) translate(-6px, 8px);
+}
+
+.open .for_mobile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.for_mobile{
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
 .one {
     width: 336px;
     height: 189px;
@@ -109,21 +157,48 @@
     opacity:1;
   }
   
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  
-  li {
-    display: inline-block;
-    margin-right: 20px;
-    color:whitesmoke;
-  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
-  a, a:visited{
-    color: whitesmoke;
+li {
+  display: inline-block;
+  margin-right: 20px;
+  color:whitesmoke;
+}
+
+li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+a, a:visited{
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main_link {
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+#main_link {
+  border: 1px solid red;
+}
+
+#main_link a {
+  color: red;
 }
 
 p span{
@@ -238,12 +313,12 @@ span{
       background-position: center;
   }
     body.baenyebe{
-      background-image: url('files for site/hk at night.jpg');
+      background-image: url('files for site/iroh.jpg');
       background-size: cover;
       background-position: center;
   }
     body.youtube_vids{
-      background-image: url('files for site/hk at night.jpg');
+      background-image: url('files for site/clear water view.jpg');
       background-size: cover;
       background-position: center;
   }
@@ -252,6 +327,18 @@ span{
       background-size: cover;
       background-position: center;
   }
+
+    header nav{
+      display: block;
+    }
+
+    #mobile-nav{
+      display: none;
+    }
+
+    .for_mobile{
+      display: none;
+    }
 }
 
 @media only screen and (max-width: 900px) {
