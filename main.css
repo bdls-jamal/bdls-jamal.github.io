@@ -205,20 +205,21 @@
         left: 0;
         width: 100%;
       }
-
-      body {
-        background-image: url('files for site/hk at night.jpg');
-        background-size: cover;
-        background-position: center;
-    }
+    
+    body {
+      background-image: url('files for site/hk at night.jpg');
+      background-size: cover;
+      background-position: center;
+  }
 }
 
-/* @media only screen and (max-width: 900px) {
-    .DM {
-        width: 100%;
-        margin: auto;
-    }
-} */
+@media only screen and (max-width: 900px) {
+  body {
+    background-image: url('files for site/mobile-background.jpg');
+    background-size: contain;
+    background-position: center;
+  }
+}
   /* @media only screen and (min-width: 1081px) {
     .images {
         display: block;
