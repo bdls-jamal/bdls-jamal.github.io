@@ -1,16 +1,16 @@
-#one {
+.one {
     width: 560px;
     height: 315px;
     display: inline-block;
 }
 
-#two {
+.two {
     width: 560px;
     height: 315px;
     display: inline-block;
 }
 
-#three {
+/* #three {
     width: 560px;
     height: 315px;
     display: inline-block;
@@ -20,7 +20,7 @@
     width: 560px;
     height: 315px;
     display: inline-block;
-}
+} */
 
 
 .images {
@@ -116,13 +116,37 @@
     margin-left: auto;
     margin-right: auto;
     }
-}
 
-    #neon {
+    .one{
+        position: relative;
+        padding-bottom: 16.5%; 
+        height: 0;
+      }
+      .one iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+      }
+      
+      .two{
+        position: relative;
+        padding-bottom: 10%; 
+        height: 0;
+      }
+      .two iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+      }
+
+      #neon {
         margin-left: auto;
         margin-right: auto;
         width: 420px;
     }
+}
 
 @media only screen and (max-width: 900px) {
     #DM {
