@@ -205,6 +205,12 @@
         left: 0;
         width: 100%;
       }
+
+      body {
+        background-image: url('files for site/hk at night.jpg');
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 /* @media only screen and (max-width: 900px) {
