@@ -1,4 +1,4 @@
-header nav{
+header #nav{
   display: none;
 }
 
@@ -6,6 +6,7 @@ header nav{
   margin: auto 0;
   display: block;
   cursor: pointer;
+  overflow: hidden;
 }
 
 #mobile-nav div{
@@ -42,13 +43,17 @@ header nav{
   position: absolute;
   top: 50px;
   left: 0;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 400px);
   width: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(black, pink);
 }
 
 .for_mobile li{
   margin-top: 5px;
-  background-color: rgba(51, 51, 51, 1);
+  text-align: center;
+  padding: 14px 16px;
+  text-transform: uppercase;
 }
 
 .one {
@@ -382,7 +387,7 @@ span{
       background-color: rgb(18, 95, 95);
     }
 
-    header nav{
+    header #nav{
       display: block;
     }
 
