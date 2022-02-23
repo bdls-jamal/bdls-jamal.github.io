@@ -333,13 +333,12 @@ span{
       background-position: center;
   }
 
-    ul{
-      list-style: none;
-      background-color: blueviolet;
-      padding: 10px;
-      margin: 0;
+    /* div ul #nav{
       text-align: center;
+      display: inline-block;
+      position: relative
     }
+
 
     ul li{
       display: inline-block;
@@ -354,10 +353,33 @@ span{
       font-family: 'Times New Roman', Times, serif;
       text-align: center;
       text-transform: capitalize;
+    } */
+    #nav {
+      width:100%;
+      margin:0 auto;
+      list-style:none;
+      background-color: black;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    #nav li {
+    float:left;
+    }
+    #nav a {
+    display:block;
+    text-align:center;
+    width:150px; /* fixed width */
+    text-decoration:none; 
+    padding: 15px 10px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-transform: capitalize;
     }
 
     ul li:hover{
-      background-color: aqua;
+      background-color: rgb(18, 95, 95);
     }
 
     header nav{

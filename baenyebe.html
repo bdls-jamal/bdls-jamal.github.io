@@ -7,9 +7,26 @@
     </head>
     <body class="baenyebe">
         <header>
-            <nav>
-                <ul>
-                    <li>
+            <ul id="nav">
+                <li id="main_link">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="youtube vids.html">Cool Youtube Videos</a>
+                </li>
+                <li>
+                    <a href="baenyebe.html">baenyebe Recent Uploads</a>
+                </li>
+                <li>
+                    <a href="misc.html">Misc Nonsense</a>
+                </li>
+            </ul>
+            <div id="mobile-nav" onclick="toggleForMobile(this)">
+                <div class='item1'></div>
+                <div class="item2"></div>
+                <div class="item3"></div>
+                <ul class="for_mobile">
+                    <li id="main_link">
                         <a href="index.html">Home</a>
                     </li>
                     <li>
@@ -22,7 +39,7 @@
                         <a href="misc.html">Misc Nonsense</a>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </header>
         <div id="auto_youtube" style="text-align: center;">
             <div class="latest" style="text-align: center;">
