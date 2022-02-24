@@ -7,20 +7,28 @@
     </head>
     <body class="youtube_vids">
         <header>
-            <ul id="nav">
-                <li id="main_link">
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="youtube vids.html">Cool Youtube Videos</a>
-                </li>
-                <li>
-                    <a href="baenyebe.html">baenyebe Recent Uploads</a>
-                </li>
-                <li>
-                    <a href="misc.html">Misc Nonsense</a>
-                </li>
-            </ul>
+            <div id="brand">
+                <a href="https://github.com/bdls-jamal/bdls-jamal.github.io" target="_blank">
+                    <img src="files for site/takashihypebeast.jpg" alt="Takashi Hype" class="pfp">
+                </a>
+            </div>
+            <nav>
+                <ul id="nav">
+                    <li id="main_link">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="youtube vids.html">Cool Youtube Videos</a>
+                    </li>
+                    <li>
+                        <a href="baenyebe.html">baenyebe Recent Uploads</a>
+                    </li>
+                    <li>
+                        <a href="misc.html">Misc Nonsense</a>
+                    </li>
+                </ul>
+            </nav>
+            
             <div id="mobile-nav" onclick="toggleForMobile(this)">
                 <div class='item1'></div>
                 <div class="item2"></div>
@@ -64,3 +72,10 @@
         </div>
     </body>
 </html>
+
+<!-- JavaScript -->
+<script>
+    function toggleForMobile(menu) {
+        menu.classList.toggle('open')
+    }
+</script>
